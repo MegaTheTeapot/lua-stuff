@@ -68,8 +68,8 @@ function SendMsg(message, color)
 end
 SendMsg(message, color)
 load_button.MouseButton1Down:Connect(function()
-	print(TextBox.Text)
-	loadstring(game:HttpGet((TextBox.Text),true))()
+	print(url_input.Text)
+	loadstring(game:HttpGet((url_input.Text),true))()
 end)
 closebutton.MouseButton1Down:Connect(function()
 	Frame.Visible = false
